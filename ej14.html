@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Ejercicio 14</header>
+    <nav>
+        <li><a href="index.html">pagina de inicio</a></li>  
+    </nav>
+    <button onclick="duplicar()">Crear</button>
+    <script>
+        function duplicar(){
+            let numero=[];
+            for(i=0;i<5;i++){
+                let num=prompt("ingrese valores: ");
+                num=(Number(num)*2);
+                numero.push(num);
+            }
+            for(i=0;i<5;i++){
+                alert("Los valores del arreglo duplicados son: "+ numero[i]);
+            }
+        }
+    </script>
+</body>
+</html>

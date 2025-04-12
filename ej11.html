@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Ejercicio 11</header>
+    <nav>
+        <li><a href="index.html">pagina de inicio</a></li>  
+    </nav>
+</body>
+<button onclick="kilometro()">calcular</button>
+<script>
+    function kilometro(){
+        let kil=prompt("Ingrese kilometros recorrido: ");
+        kil=Number(kil);
+        let litro=prompt("Ingrese litros de combustible consumidos: ");
+        litro=Number(litro);
+        let res=(litro/kil);
+        alert("El consumo de combustible por kilometro es: "+ res);
+    }
+</script>
+</html>

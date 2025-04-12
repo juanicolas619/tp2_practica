@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Ejercicio 15</header>
+    <nav>
+        <li><a href="index.html">pagina de inicio</a></li>  
+    </nav>
+    <button onclick="retornarmes()">Consultar</button>
+    <script>
+        function retornarmes(){
+            let mes=prompt("Ingrese numero de mes: ");
+            mes=Number(mes);
+            switch(mes){
+                case 1: alert("mes elegido: ENERO");break;
+                case 2: alert("mes elegido: FEBRERO");break;
+                case 3: alert("mes elegido: MARZO");break;
+                case 4: alert("mes elegido: ABRIL");break;
+                case 5: alert("mes elegido: MAYO");break;
+                case 6: alert("mes elegido: JUNIO");break;
+                case 7: alert("mes elegido: JULIO");break;
+                case 8: alert("mes elegido: AGOSTO");break;
+                case 9: alert("mes elegido: SEPTIEMBRE");break;
+                case 10: alert("mes elegido: OCTUBRE");break;
+                case 11: alert("mes elegido: NOVIEMBRE");break;
+                case 12: alert("mes elegido: DICIEMBRE");break;
+                default: alert("El numero ingresado NO pertenece a un mes");
+            }
+        }
+    </script>
+</body>
+</html>

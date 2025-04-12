@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Ejercicio 17</header>
+    <nav>
+        <li><a href="index.html">pagina de inicio</a></li>  
+    </nav>
+    <button onclick="contarletraA()">Contar</button>
+    <script>
+        function contarletraA(){
+            let cont=0;
+            let palabra=prompt("Ingrese palabra: ");
+            for(i=0;i<palabra.length;i++){
+                if(palabra[i]==="a"){
+                    cont=cont+1;
+                }
+            }
+            alert("Cantidad de letras A: "+ cont);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Ejercicio 16</header>
+    <nav>
+        <li><a href="index.html">pagina de inicio</a></li>  
+    </nav>
+    <button onclick="sumarRango()">Calcular</button>
+    <script>
+        function sumarRango(){
+            let num1=prompt("Ingrese valor inicial: ");
+            num1=Number(num1);
+            let num2=prompt("Ingrese valor final: ");
+            num2=Number(num2);
+            if(num1>num2){
+                alert("EL VALOR INICIAL ES MAYOR AL VALOR FINAL");
+            }
+            else if(num1===num2){
+                alert("SUMA TOTAL: "+ num1);
+            }
+            else{
+                let i=num1;
+                let suma=0;
+                while(i<=num2){
+                    suma=i+suma;
+                    i=i+1;
+                }
+                alert("SUMA TOTAL: "+ suma);
+            }
+        }
+    </script>
+</body>
+</html>
