@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Ejercicio 10</header>
+    <nav>
+        <li><a href="index.html">pagina de inicio</a></li>  
+    </nav>
+    <button onclick="promedio()">calcular</button>
+    <script>
+        function promedio(){
+            let num1=prompt("Ingrese valor 1");
+            let num2=prompt("Ingrese valor 2");
+            let num3=prompt("Ingrese valor 3");
+            num1=Number(num1);
+            num2=Number(num2);
+            num3=Number(num3);
+            let prom=(num1+num2+num3)/3;
+            alert("El promedio es: "+prom);
+        }
+    </script>
+</body>
+</html>
